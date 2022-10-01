@@ -16,8 +16,12 @@ form.addEventListener("submit", (event) => {
 function readFromStorage(){
     const key = window.localStorage.getItem('key');
     const value = window.localStorage.getItem('value');
-    document.querySelector('output').textContent = JSON.stringify({ key, value }, null, 2);
+    document.querySelector('output')
+    .textContent = JSON.stringify(
+        { key, value },
+         null,
+          2
+          );
 }
-
 
 readFromStorage();
